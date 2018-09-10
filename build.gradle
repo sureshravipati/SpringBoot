@@ -1,0 +1,49 @@
+apply plugin: 'java'
+apply plugin: 'war'
+apply plugin: 'eclipse-wtp'
+
+buildscript {
+  repositories {
+    jcenter()
+  }
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+ 
+ 	compile 'org.springframework.boot:spring-boot-starter-parent:+'
+ 	compile 'org.springframework.boot:spring-boot-starter-data-jpa:+'
+	compile 'org.springframework.boot:spring-boot-starter-web:+'
+	compile 'org.springframework.boot:spring-boot-starter-tomcat:+'
+	compile 'org.apache.tomcat.embed:tomcat-embed-jasper:+'
+	//compile 'javax.validation:validation-api:1+'
+	//compile 'javax.servlet:servlet-api:+'
+	compile 'javax.servlet.jsp:javax.servlet.jsp-api:2+'
+	compile 'javax.servlet:jstl:1+'
+	compile 'taglibs:standard:1+'
+	compile 'mysql:mysql-connector-java:5.1.31'
+	compile 'org.springframework:spring-test:+'
+	compile 'junit:junit:+'
+	
+}
+
+//For Eclipse IDE only
+eclipse {
+
+  wtp {
+    component {
+      
+      //define context path, default to project folder name
+      contextPath = 'SpringBooot'
+      
+    }
+    
+  }
+}

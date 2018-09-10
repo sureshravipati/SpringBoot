@@ -1,0 +1,60 @@
+nav > div {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #111;
+}
+nav > div > a {
+    display: block;
+    text-align: center;
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    padding: 14px 16px;
+    text-decoration: none;
+    float: left;
+    white-space: nowrap;
+}
+nav > div > a:hover,a:focus {
+	color: white;
+    background-color: #4CAF50;
+    text-decoration: none;
+}
+
+div > img {
+	height: 250px;
+    width: 50%;
+    background-color: powderblue;
+    border: 1px solid #4CAF50;
+}
+
+.center {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}
+
+.center .nmae {
+	padding-left: 113px;
+}
+
+.subHeading {
+	font-weight: bold;
+}
+
+.details{
+	width: 50%;
+}
+
+iframe {
+	border: 0px
+}
+
+
+input {
+	
+	margin-bottom: 10px;
+	-moz-border-radius: 5px;
+ 	border-radius: 5px;
+    padding:5px;
+}
